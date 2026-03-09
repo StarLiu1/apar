@@ -4,13 +4,12 @@ Plotting utilities for visualizing the Applicability Area.
 
 from __future__ import annotations
 
-import numpy as np
-from numpy.typing import ArrayLike
 from typing import Optional
+
+import numpy as np
 
 try:
     import matplotlib.pyplot as plt
-    import matplotlib.patches as mpatches
 
     HAS_MATPLOTLIB = True
 except ImportError:
@@ -133,7 +132,8 @@ def plot_utility_lines(
         The axes with the plot.
     """
     _check_matplotlib()
-    from apar.core import treat_all, treat_none, test_utility
+
+    from apar.core import test_utility, treat_all, treat_none
 
     if ax is None:
         fig, ax = plt.subplots(figsize=figsize)

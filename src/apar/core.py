@@ -21,11 +21,11 @@ Reference:
 
 from __future__ import annotations
 
+from typing import Optional
+
 import numpy as np
 import sympy as sy
 from numpy.typing import ArrayLike
-from typing import Optional
-
 
 # ---------------------------------------------------------------------------
 # Utility line functions

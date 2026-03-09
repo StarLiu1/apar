@@ -14,12 +14,12 @@ Reference:
 
 from apar._version import __version__
 from apar.core import (
-    treat_all,
-    treat_none,
-    test_utility,
+    applicability_area,
     compute_thresholds,
     compute_thresholds_over_roc,
-    applicability_area,
+    test_utility,
+    treat_all,
+    treat_none,
 )
 from apar.plotting import plot_applicability_area, plot_utility_lines
 
